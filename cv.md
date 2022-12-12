@@ -9,3 +9,7 @@
 - tel: +7 927* 42* 95\*
 - email: mail@deenar.ru
 - github: @45514118
+
+### Goal
+
+I'm intested in web development & want to become front-end developer.
