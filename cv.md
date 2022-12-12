@@ -56,3 +56,8 @@ Write a function that takes in an array containing a gym member´s personal deta
 - GoIT HTML & CSS (completed)
 - Goit Javascript (completed)
 - RS School JavaScript/Front-end.Stage0 (in progress)
+
+### Projects
+
+- [https://45514118.github.io/goit-markup-hw-08/](https://45514118.github.io/goit-markup-hw-08/) - HTML & CSS Practice (solo project)
+- [https://korobass87.github.io/Weather-GOIT/](https://korobass87.github.io/Weather-GOIT/) - JavaScript Practice (team project)
