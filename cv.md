@@ -13,3 +13,9 @@
 ### Goal
 
 I'm intested in web development & want to become front-end developer.
+
+### Skills
+
+- HTML5, CSS3
+- JavaScript
+- Git
