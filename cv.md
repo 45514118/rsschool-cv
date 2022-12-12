@@ -61,3 +61,9 @@ Write a function that takes in an array containing a gym member´s personal deta
 
 - [https://45514118.github.io/goit-markup-hw-08/](https://45514118.github.io/goit-markup-hw-08/) - HTML & CSS Practice (solo project)
 - [https://korobass87.github.io/Weather-GOIT/](https://korobass87.github.io/Weather-GOIT/) - JavaScript Practice (team project)
+
+### Languages
+
+- **English** - Intermediate
+- **Russian** - Native
+- **Tatarian** - Native
