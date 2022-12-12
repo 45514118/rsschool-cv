@@ -19,3 +19,34 @@ I'm intested in web development & want to become front-end developer.
 - HTML5, CSS3
 - JavaScript
 - Git
+
+### Code example
+
+##### Task:
+
+Write a function that takes in an array containing a gym member´s personal details.
+
+##### Solution:
+
+```
+    function calorie (member){
+      let RMR
+      if(member[1]==="m") {
+        RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] + 5
+      } else {
+        RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] - 161
+      }
+      let activityFactor
+      if(member[5]==="little activity") {
+        activityFactor = 1.2
+      } else if(member[5]==="moderately active") {
+        activityFactor = 1.55
+      } else if(member[5]==="very active") {
+        activityFactor = 1.7
+      } else if(member[5]==="extremely active"){
+        activityFactor = 1.9
+      }
+      const calorieRequirement = RMR * activityFactor
+      return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`
+    }
+```
