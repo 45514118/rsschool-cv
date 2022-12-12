@@ -50,3 +50,9 @@ Write a function that takes in an array containing a gym member´s personal deta
       return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`
     }
 ```
+
+### Courses
+
+- GoIT HTML & CSS (completed)
+- Goit Javascript (completed)
+- RS School JavaScript/Front-end.Stage0 (in progress)
