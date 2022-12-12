@@ -3,3 +3,9 @@
 # Dinar Agzyamov
 
 #### Front-end developer
+
+### Contacts
+
+- tel: +7 927* 42* 95\*
+- email: mail@deenar.ru
+- github: @45514118
