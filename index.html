@@ -9,8 +9,160 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="container">
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li class="nav-list-item"><a href="#contact">Contacts</a></li>
+                <li class="nav-list-item"><a href="#info">Information</a></li>
+                <li class="nav-list-item"><a href="#skill">Skills</a></li>
+                <li class="nav-list-item"><a href="#code">Code example</a></li>
+                <li class="nav-list-item"><a href="#course">Courses</a></li>
+                <li class="nav-list-item"><a href="#project">Projects</a></li>
+                <li class="nav-list-item"><a href="#language">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section profile">
+            <div class="left"><img class="avatar" src="./avatar.jpg" alt="My avatar"></div>
+            <div class="right">
+                <h1 class="profile-title">Dinar Agzyamov</h1>
+                <h2>Front-end Developer (beginner)</h2>
+            </div>
+        </section>
+        <section class="section">
+            <div class="left">
+                <h2 id="contact">Contacts</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Tel: <a href="tel:+79274422955">+79274422955</a></li>
+                    <li>Email: <a href="mailto:mail@deenar.ru">mail@deenar.ru</a></li>
+                </ul>
+            </div>
 
+        </section>
+        <section class="section information">
+            <div class="left">
+                <h2>Information</h2>
+            </div>
+            <div class="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed orci eget arcu blandit congue
+                    eget
+                    et ex. Quisque
+                    volutpat eget magna in dictum. Cras pretium lorem ac rhoncus facilisis. Cras ultrices rutrum enim ut
+                    ultricies.
+                    Curabitur erat lectus, dapibus id gravida id, sagittis vitae est. Phasellus neque nibh, maximus eu
+                    molestie eget,
+                    lobortis id arcu. Maecenas venenatis pretium felis, at gravida massa euismod efficitur. Ut aliquam
+                    urna
+                    eu venenatis
+                    bibendum. Pellentesque non viverra augue, a malesuada arcu. Donec euismod urna sit amet metus
+                    consequat
+                    consectetur.
+                    Nulla vel neque nisl. Nunc velit elit, tempor vel sapien id, iaculis malesuada ipsum.</p>
+            </div>
+
+        </section>
+        <section class="section skills">
+            <div class="left">
+                <h2 id="skill">Skills</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section">
+            <div class="left">
+                <h2>Code example</h2>
+            </div>
+            <div class="right code-block">
+                <h3>Task:</h3>
+                <p>Write a function that takes in an array containing a gym member´s personal details.</p>
+                <h3>Solution:</h3>
+                <code>
+                                function calorie (member){
+                                let RMR
+                                if(member[1]==="m") {
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] + 5
+                                } else {
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] - 161
+                                }
+                                let activityFactor
+                                if(member[5]==="little activity") {
+                                activityFactor = 1.2
+                                } else if(member[5]==="moderately active") {
+                                activityFactor = 1.55
+                                } else if(member[5]==="very active") {
+                                activityFactor = 1.7
+                                } else if(member[5]==="extremely active"){
+                                activityFactor = 1.9
+                                }
+                                const calorieRequirement = RMR * activityFactor
+                                return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`
+                                }
+                            </code>
+            </div>
+
+        </section>
+        <section class="section courses">
+            <div class="left">
+                <h2 id="course">Courses</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>GoIT HTML & CSS (completed)</li>
+                    <li>GoIT JavaScript (completed)</li>
+                    <li>RS School JavaScript/Front-end. Stage 0 (in progress)</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section projects">
+            <div class="left">
+                <h2 id="project">Projects</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://45514118.github.io/goit-markup-hw-08/">HTML & CSS Practice (solo project)</a>
+                    </li>
+                    <li><a href="https://korobass87.github.io/Weather-GOIT/">JavaScript Practice (team project)</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section languages">
+            <div class="left">
+                <h2 id="language">Languages</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>English - Intermediate</li>
+                    <li>Russian - Native</li>
+                    <li>Tatar - Native</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="https://github.com/45514118">
+                    <img src="https://miro.medium.com/max/157/1*4j8t0VplZ4eZn9jnHCclsQ.jpeg" alt="GitHub logo">
+                </a></li>
+            <li>Dinar Agzyamov <date>2022</date>
+            </li>
+            <li><a href="https://rs.school/js/"><img class="github-logo" src="https://rs.school/images/rs_school_js.svg"
+                        alt="RS School Logo"></a></li>
+        </ul>
+
+    </footer>
 </body>
 
 </html>
