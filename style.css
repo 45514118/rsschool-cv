@@ -1,0 +1,70 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 60%;
+}
+.navigation > ul {
+    display: flex;
+    justify-content: center;
+}
+.nav-list-item {
+    padding: 0 4px;
+}
+.nav-list-item > a {
+    color: darkgray;
+}
+.nav-list-item>a:hover {
+    color: black;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   padding: 1rem 0;
+
+
+}
+.profile-title {
+    font-size: 3rem;
+}
+.avatar {
+    width: 100%;
+    max-width: 256px;
+    height: auto;
+    border-radius: 50%;
+}
+.left {
+    min-width: 35%;
+    text-align: right;
+    padding-right: 1rem;
+
+}
+.right {
+    min-width: 65%;
+    padding-left: 1rem;
+}
+.footer {
+    border-top: 1px gray dotted;
+}
+.footer > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.github-logo {
+    width: 100px;
+}

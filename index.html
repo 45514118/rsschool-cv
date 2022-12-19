@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li class="nav-list-item"><a href="#contact">Contacts</a></li>
+                <li class="nav-list-item"><a href="#info">Information</a></li>
+                <li class="nav-list-item"><a href="#skill">Skills</a></li>
+                <li class="nav-list-item"><a href="#code">Code</a></li>
+                <li class="nav-list-item"><a href="#course">Courses</a></li>
+                <li class="nav-list-item"><a href="#project">Projects</a></li>
+                <li class="nav-list-item"><a href="#language">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section profile">
+            <div class="left">
+                <img class="avatar" src="./avatar.jpg" alt="My avatar">
+            </div>
+            <div class="right">
+                <h1 class="profile-title">Dinar Agzyamov</h1>
+                <h2>Front-end Developer (beginner)</h2>
+            </div>
+        </section>
+        <section class="section contacts" id="contact">
+            <div class="left">
+                <h2>Contacts</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Tel: <a href="tel:+79274422955">+79274422955</a></li>
+                    <li>Email: <a href="mailto:mail@deenar.ru">mail@deenar.ru</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section information" id="info">
+            <div class="left">
+                <h2>Information</h2>
+            </div>
+            <div class="right">
+                <p>Hi. I am 39 years old supply engineer from Kazan city, Republic of Tatarstan. I'm trying to change my
+                    life and learn a new profession:
+                    front-end developer.</p>
+            </div>
+
+        </section>
+        <section class="section skills" id="skill">
+            <div class="left">
+                <h2>Skills</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section code-example" id="code">
+            <div class="left">
+                <h2>Code example</h2>
+            </div>
+            <div class="right code-block">
+                <h3>Task:</h3>
+                <p>Write a function that takes in an array containing a gym member´s personal details.</p>
+                <h3>Solution:</h3>
+                <code>
+                                function calorie (member){<br>
+                                let RMR<br>
+                                if(member[1]==="m") {<br>
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] + 5<br>
+                                } else {<br>
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] - 161<br>
+                                }<br>
+                                let activityFactor<br>
+                                if(member[5]==="little activity") {<br>
+                                activityFactor = 1.2<br>
+                                } else if(member[5]==="moderately active") {<br>
+                                activityFactor = 1.55<br>
+                                } else if(member[5]==="very active") {<br>
+                                activityFactor = 1.7<br>
+                                } else if(member[5]==="extremely active"){<br>
+                                activityFactor = 1.9<br>
+                                }<br>
+                                const calorieRequirement = RMR * activityFactor<br>
+                                return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`<br>
+                                }
+                            </code>
+            </div>
+
+        </section>
+        <section class="section courses" id="course">
+            <div class="left">
+                <h2>Courses</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>GoIT HTML & CSS (completed)</li>
+                    <li>GoIT JavaScript (completed)</li>
+                    <li>RS School JavaScript/Front-end. Stage 0 (in progress)</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section projects" id="project">
+            <div class="left">
+                <h2>Projects</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://45514118.github.io/goit-markup-hw-08/">HTML & CSS Practice (solo project)</a>
+                    </li>
+                    <li><a href="https://korobass87.github.io/Weather-GOIT/">JavaScript Practice (team project)</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section languages" id="language">
+            <div class="left">
+                <h2>Languages</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>English - Intermediate</li>
+                    <li>Russian - Native</li>
+                    <li>Tatar - Native</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="https://github.com/45514118">
+                    <img src="https://miro.medium.com/max/157/1*4j8t0VplZ4eZn9jnHCclsQ.jpeg" alt="GitHub logo">
+                </a></li>
+            <li>Dinar Agzyamov 2022
+            </li>
+            <li><a href="https://rs.school/js/"><img class="github-logo" src="https://rs.school/images/rs_school_js.svg"
+                        alt="RS School Logo"></a></li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
