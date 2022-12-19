@@ -16,7 +16,7 @@
                 <li class="nav-list-item"><a href="#contact">Contacts</a></li>
                 <li class="nav-list-item"><a href="#info">Information</a></li>
                 <li class="nav-list-item"><a href="#skill">Skills</a></li>
-                <li class="nav-list-item"><a href="#code">Code example</a></li>
+                <li class="nav-list-item"><a href="#code">Code</a></li>
                 <li class="nav-list-item"><a href="#course">Courses</a></li>
                 <li class="nav-list-item"><a href="#project">Projects</a></li>
                 <li class="nav-list-item"><a href="#language">Languages</a></li>
@@ -25,15 +25,17 @@
     </header>
     <main>
         <section class="section profile">
-            <div class="left"><img class="avatar" src="./avatar.jpg" alt="My avatar"></div>
+            <div class="left">
+                <img class="avatar" src="./avatar.jpg" alt="My avatar">
+            </div>
             <div class="right">
                 <h1 class="profile-title">Dinar Agzyamov</h1>
                 <h2>Front-end Developer (beginner)</h2>
             </div>
         </section>
-        <section class="section">
+        <section class="section contacts" id="contact">
             <div class="left">
-                <h2 id="contact">Contacts</h2>
+                <h2>Contacts</h2>
             </div>
             <div class="right">
                 <ul>
@@ -43,31 +45,20 @@
             </div>
 
         </section>
-        <section class="section information">
+        <section class="section information" id="info">
             <div class="left">
                 <h2>Information</h2>
             </div>
             <div class="right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed orci eget arcu blandit congue
-                    eget
-                    et ex. Quisque
-                    volutpat eget magna in dictum. Cras pretium lorem ac rhoncus facilisis. Cras ultrices rutrum enim ut
-                    ultricies.
-                    Curabitur erat lectus, dapibus id gravida id, sagittis vitae est. Phasellus neque nibh, maximus eu
-                    molestie eget,
-                    lobortis id arcu. Maecenas venenatis pretium felis, at gravida massa euismod efficitur. Ut aliquam
-                    urna
-                    eu venenatis
-                    bibendum. Pellentesque non viverra augue, a malesuada arcu. Donec euismod urna sit amet metus
-                    consequat
-                    consectetur.
-                    Nulla vel neque nisl. Nunc velit elit, tempor vel sapien id, iaculis malesuada ipsum.</p>
+                <p>Hi. I am 39 years old supply engineer from Kazan city, Republic of Tatarstan. I'm trying to change my
+                    life and learn a new profession:
+                    front-end developer.</p>
             </div>
 
         </section>
-        <section class="section skills">
+        <section class="section skills" id="skill">
             <div class="left">
-                <h2 id="skill">Skills</h2>
+                <h2>Skills</h2>
             </div>
             <div class="right">
                 <ul>
@@ -78,7 +69,7 @@
             </div>
 
         </section>
-        <section class="section">
+        <section class="section code-example" id="code">
             <div class="left">
                 <h2>Code example</h2>
             </div>
@@ -87,33 +78,33 @@
                 <p>Write a function that takes in an array containing a gym member´s personal details.</p>
                 <h3>Solution:</h3>
                 <code>
-                                function calorie (member){
-                                let RMR
-                                if(member[1]==="m") {
-                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] + 5
-                                } else {
-                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] - 161
-                                }
-                                let activityFactor
-                                if(member[5]==="little activity") {
-                                activityFactor = 1.2
-                                } else if(member[5]==="moderately active") {
-                                activityFactor = 1.55
-                                } else if(member[5]==="very active") {
-                                activityFactor = 1.7
-                                } else if(member[5]==="extremely active"){
-                                activityFactor = 1.9
-                                }
-                                const calorieRequirement = RMR * activityFactor
-                                return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`
+                                function calorie (member){<br>
+                                let RMR<br>
+                                if(member[1]==="m") {<br>
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] + 5<br>
+                                } else {<br>
+                                RMR = 10 * member[4] + 6.25 * member[3] - 5 * member[2] - 161<br>
+                                }<br>
+                                let activityFactor<br>
+                                if(member[5]==="little activity") {<br>
+                                activityFactor = 1.2<br>
+                                } else if(member[5]==="moderately active") {<br>
+                                activityFactor = 1.55<br>
+                                } else if(member[5]==="very active") {<br>
+                                activityFactor = 1.7<br>
+                                } else if(member[5]==="extremely active"){<br>
+                                activityFactor = 1.9<br>
+                                }<br>
+                                const calorieRequirement = RMR * activityFactor<br>
+                                return `${member[0]}´s daily calorie requirement is ${(Math.round(calorieRequirement * 100)/100).toFixed(2)} kcal.`<br>
                                 }
                             </code>
             </div>
 
         </section>
-        <section class="section courses">
+        <section class="section courses" id="course">
             <div class="left">
-                <h2 id="course">Courses</h2>
+                <h2>Courses</h2>
             </div>
             <div class="right">
                 <ul>
@@ -124,9 +115,9 @@
             </div>
 
         </section>
-        <section class="section projects">
+        <section class="section projects" id="project">
             <div class="left">
-                <h2 id="project">Projects</h2>
+                <h2>Projects</h2>
             </div>
             <div class="right">
                 <ul>
@@ -137,9 +128,9 @@
             </div>
 
         </section>
-        <section class="section languages">
+        <section class="section languages" id="language">
             <div class="left">
-                <h2 id="language">Languages</h2>
+                <h2>Languages</h2>
             </div>
             <div class="right">
                 <ul>
